@@ -34,7 +34,13 @@ class App < Sinatra::Base
     word4 = params[:word4]
     word5 = params[:word5]
     
-    return word1 << word2 << word3 << word4 << word5
+    output << word1
+    output << word2
+    output << word3
+    output << word4
+    output << word5
+    
+    return output.join(" ")
   end
   
   get '/:operation/:number1/:number2' do
