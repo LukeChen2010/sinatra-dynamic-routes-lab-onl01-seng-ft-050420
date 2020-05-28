@@ -19,8 +19,8 @@ class App < Sinatra::Base
     output = ""
     
     while number > 0
-    output << phrase
-    number -= 1
+      output << phrase
+      number -= 1
     end
     
     output << "."
