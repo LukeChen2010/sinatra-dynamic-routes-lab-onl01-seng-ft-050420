@@ -19,11 +19,11 @@ class App < Sinatra::Base
     output = ""
     
     while number > 0
-      output = output + phrase
+      output << phrase
       number -= 1
     end
     
-    output = output + "."
+    output << "."
     return output
   end
   
