@@ -55,8 +55,8 @@ class App < Sinatra::Base
       return (number1 + number2).to_s
     when "subtract"
       return (number1 - number2).to_s
-    when "multply"
-      return (number1*number2).to_s
+    when "multiply"
+      return (number1 * number2).to_s
     when "divide"
       return (number1 / number2).to_s
     end
