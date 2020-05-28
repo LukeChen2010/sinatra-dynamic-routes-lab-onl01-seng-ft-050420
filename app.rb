@@ -47,8 +47,8 @@ class App < Sinatra::Base
   
   get '/:operation/:number1/:number2' do
     operation = params[:operation]
-    number1 = params[:number1].to_f
-    number2 = params[:number2].to_f
+    number1 = params[:number1].to_i
+    number2 = params[:number2].to_i
     
     case operation
     when "add"
@@ -56,7 +56,7 @@ class App < Sinatra::Base
     when "subtract"
       return (number1 - number2).to_s
     when "multply"
-      return (number1 * number2).to_s
+      return (number1*number2).to_s
     when "divide"
       return (number1 / number2).to_s
     end
