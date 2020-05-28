@@ -42,7 +42,7 @@ class App < Sinatra::Base
     output << word4
     output << word5
     
-    return output.join(" ")
+    return output.join(" ") << "."
   end
   
   get '/:operation/:number1/:number2' do
