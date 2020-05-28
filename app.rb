@@ -18,6 +18,8 @@ class App < Sinatra::Base
     phrase = params[:phrase]
     output = ""
     
+    return phrase
+    
     while number > 0
       output = output + phrase
       number -= 1
